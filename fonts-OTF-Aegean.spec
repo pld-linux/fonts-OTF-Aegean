@@ -35,7 +35,7 @@ Anatolian Hieroglyphs are available in the work-font, Anatolian.
 #TODO
 
 %prep
-%setup -q -n freefont-%{version} -a1
+%setup -q -c -a1
 
 %install
 rm -rf $RPM_BUILD_ROOT
