@@ -10,6 +10,7 @@ Source0:	http://users.teilar.gr/~g1951d/Aegean.zip
 Source1:	http://users.teilar.gr/~g1951d/Anatolian.zip
 # Source1-md5:	857dd55cdb7b8ba54b69023f05e92114
 URL:		http://users.teilar.gr/~g1951d/
+BuildRequires:	iconv
 BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
@@ -29,7 +30,7 @@ the following scripts and symbols, as yet unsupported by Unicode:
 Cretan Hieroglyphs, Cypro-Minoan, Linear A, the Arkalochori Axe,
 Ancient Greek and Old Italic variant alphabets.
 
-Anatolian Hieroglyphs are available in the work-font, Anatolian. 
+Anatolian Hieroglyphs are available in the work-font, Anatolian.
 
 %%description -l pl.UTF-8
 #TODO
