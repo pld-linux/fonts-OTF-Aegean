@@ -37,6 +37,12 @@ Anatolian Hieroglyphs are available in the work-font, Anatolian.
 %prep
 %setup -q -c -a1
 
+%build
+for i in *.txt; do
+	iconv -f utf16 -t utf8 < $i > $i.
+	mv -f $i. $i
+done
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{otffontsdir}
